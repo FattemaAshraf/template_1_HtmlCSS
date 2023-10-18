@@ -397,6 +397,7 @@ header .links ul li:not(:last-child) a {
   margin-top: 100px;
 }
 @media (max-width: 1200px) {
+
   .about .about-content {
     flex-direction: column;
     justify-content: center;
@@ -457,5 +458,58 @@ header .links ul li:not(:last-child) a {
   line-height: 2;
   color: #777;
 }
-
 /* end About section */
+/* start Contact section */
+.contact {
+  background-color: var(--grey-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact .info{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 60px ;
+}
+.contact .info .label{
+  font-weight: 800;
+  font-size: 40px;
+  letter-spacing: -2px;
+  color: var(--darkBlue);
+  margin-bottom: 10px;
+}
+.contact .info .link{
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: -2px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  margin-left: 30px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .contact .info{
+    margin: 0;
+    text-align: center;
+  }
+  .contact .info .link{
+    font-weight: 800;
+    font-size: 30px;
+  }
+}
+.contact .info .link:hover{
+  color: var(--darkBlue);
+  text-shadow: var(--secondary-color) 1px 0 1px;
+
+}
+.contact .info .social{
+  margin: 10px 60px;
+}
+.contact .info .social i{
+  margin-left: 5px;
+  color: var(--secondary-color);
+}
+.contact .info .social i:hover{
+  color: var(--darkBlue-color);
+  text-shadow: var(--grey-color) 1px 0 5px;
+}
+/* end Contact section */
