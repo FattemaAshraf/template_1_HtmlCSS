@@ -513,3 +513,16 @@ header .links ul li:not(:last-child) a {
   text-shadow: var(--grey-color) 1px 0 5px;
 }
 /* end Contact section */
+/* start Footer  */
+footer{
+  padding: 30px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: var(--darkBlue);
+}
+footer span{
+  color: var(--secondary-color);
+}
+/* end Footer  */
