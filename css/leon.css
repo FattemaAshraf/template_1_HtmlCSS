@@ -285,8 +285,8 @@ header .links ul li:not(:last-child) a{
 }
 .services .services-content .col .srv:hover{
     transform: scale(.9);
-    box-shadow:  #777 1px 0 10px;
-    -webkit-transform: scale(.9);
+    box-shadow:  #777 .4px 0 20px;
+        -webkit-transform: scale(.9);
     -moz-transform: scale(.9);
     -ms-transform: scale(.9);
     -o-transform: scale(.9);
@@ -326,3 +326,73 @@ header .links ul li:not(:last-child) a{
     }
 }
 /* end services section */
+/* start potfolio section */
+.potfolio{
+    background-color: var(--grey-color);
+ padding-top: 60px;
+    padding-bottom: 60px;
+}
+.potfolio .potfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    gap: 30px;
+    margin-top: 100px;
+}
+.potfolio .potfolio-content .card{
+    background-color: white;
+   
+}
+.potfolio .potfolio-content .card .image-before{
+    overflow: hidden;
+    position: relative;
+}
+.potfolio .potfolio-content .card .image-before::before{
+    content: "Project";
+    position: absolute;
+    background-color:  rgb(51 209 204 / 60%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: all.23s ease-in;
+    font-size: 1.5rem;
+    font-weight: 200;
+    top: 0;
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    -webkit-transition: all.23s ease-in;
+    -moz-transition: all.23s ease-in;
+    -ms-transition: all.23s ease-in;
+    -o-transition: all.23s ease-in;
+}
+.potfolio .potfolio-content .card:hover .image-before::before{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.potfolio .potfolio-content .card:hover{
+    box-shadow:  #777 .4px 0 20px;
+
+}
+
+.potfolio .potfolio-content .card img{
+    max-width: 100%;
+}
+.potfolio .potfolio-content .card .info{
+    padding: 20px;
+}
+.potfolio .potfolio-content .card p{
+    line-height: 1.7;
+    color: rgb(119, 119, 119);
+    font-size: 17px;
+}
+
+/* end potfolio section */
